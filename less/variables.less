@@ -264,9 +264,9 @@
 @screen-xs-min:              @screen-xs;
 @screen-phone:               @screen-xs-min;
 
-// Subdivision of the xs range into xs-A and xs-B.
-@screen-xs-A-min:            0px;
-@screen-xs-B-min:            480px;
+// Subdivision of the xs range into xs0 and xs1.
+@screen-xs0-min:            0px;
+@screen-xs1-min:            480px;
 
 // Small screen / tablet
 // Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
@@ -291,9 +291,7 @@
 @screen-sm-max:              (@screen-md-min - 1);
 @screen-md-max:              (@screen-lg-min - 1);
 
-// Maximum width for subdivisions
-@screen-xs-A-max:            (@screen-xs-B-min - 1);
-@screen-xs-B-max:            @screen-xs-max;
+// Subdivisions don't get maximum widths for now.
 
 
 //== Grid system
